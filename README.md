@@ -1,5 +1,13 @@
 # PowershellProfileSetup
-This repository is for setting up the powershell console prompt, and for configuring my cmder settings as well as adding some basic profile methods such as pulling up all solution files in my projects folder and being able to search them using a combination of [ripgrep](https://github.com/BurntSushi/ripgrep)
+This repository is for setting up the powershell console prompt that uses the following repos/applications:
+* [posh-git](https://github.com/dahlbyk/posh-git)
+* [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh)
+* [zlocation](https://github.com/vors/ZLocation)
+* [fzf](https://github.com/kelleyma49/PSFzf)
+* [ripgrep](https://github.com/BurntSushi/ripgrep)
+* [chocolatey](https://chocolatey.org/)
+
+It also configures my [cmder](https://cmder.net/) settings as well as adding some basic profile methods such as pulling up all solution files in my projects folder and being able to search them using a combination of [ripgrep](https://github.com/BurntSushi/ripgrep)
  and [fzf](https://github.com/kelleyma49/PSFzf).
 
 Here is an example of what the console looks like:
