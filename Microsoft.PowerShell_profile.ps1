@@ -10,12 +10,24 @@ Set-alias -Name f -Value Invoke-fzf
 Set-Alias l Get-ChildItemColor -Option AllScope
 Set-Alias ls Get-ChildItemColorFormatWide -Option AllScope
 Set-Alias gci Get-ChildItemColor -Option AllScope -force
+Set-Alias -Name OS -Value Open-Solution
 
 function edit {
     param (
         $file
     )
     code $file
+}
+
+function Open-Solution {
+  $currentLocation = Get-Location
+  $projLocation = "C:\users\nborup\Projects\"
+  Set-Location $projLocation
+  $selectedSolution = rg -g '*.sln' --files | invoke-fzf
+  if ($selectedSolution -ne "") {
+      $projLocation + $selectedSolution | Invoke-Item
+  }
+  Set-Location $currentLocation
 }
 
 
