@@ -21,7 +21,7 @@ function edit {
 
 function Open-Solution {
   $currentLocation = Get-Location
-  $projLocation = "C:\users\nborup\Projects\"
+  $projLocation = "$env:userprofile\Projects\"
   Set-Location $projLocation
   $selectedSolution = rg -g '*.sln' --files | invoke-fzf
   if ($selectedSolution -ne "") {
