@@ -27,3 +27,4 @@ Import-Module 'Get-ChildItemColor'
 $poshVersion = (Get-ChildItem "C:\Program Files\WindowsPowerShell\Modules\oh-my-posh\" | Sort-Object -Property LastWriteTime | Select-Object -First 1).Name
 copy-item .\myHonukai.psm1 -Destination "C:\Program Files\WindowsPowerShell\Modules\oh-my-posh\$poshVersion\Themes\"
 Set-Theme myHonukai
+choco install ripgrep
