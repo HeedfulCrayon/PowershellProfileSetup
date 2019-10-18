@@ -13,6 +13,10 @@ It also configures my [cmder](https://cmder.net/) settings as well as adding som
 Here is an example of what the console looks like:
 ![Prompt](PromptView.png)
 
+Here is an example of what the Open-Solution function looks like using a combination of ripgrep to find all *.sln files and then using the fuzzy finder to filter them:
+
+![Open-Solution](Open-SolutionFunction.png)
+
 ## Getting Started
 Clone this repository and run the setup.ps1 file.
 
